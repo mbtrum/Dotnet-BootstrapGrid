@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+
+<h1>Pugs</h1>
+
+
+<div class="row">
+
+@for (int i = 1; i <= Model.Dogs.Count(); i++){
+
+        <div class="col-xl-3">
+            <img src="~/pugs.jpg" class="img-fluid">
+            <p>@Model.Dogs.ElementAt(i-1)</p>
+        </div>
+
+        // Close the individual row
+        if(i % 4 == 0)
+        {
+            @:</div><div class="row">
+        }
+
+
+        // Close the last row
+        if(i == Model.Dogs.Count())
+        {
+           @:<div class="/row"> 
+        }
+
+    }
+
+
