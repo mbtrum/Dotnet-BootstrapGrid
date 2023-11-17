@@ -33,6 +33,7 @@ namespace BootstrapGrid.Pages
             Dogs.Add("Sadie");
             Dogs.Add("Stella");
             Dogs.Add("Bailey");
+            Dogs.Add("Audrey");
         }
 
         public void OnGet()

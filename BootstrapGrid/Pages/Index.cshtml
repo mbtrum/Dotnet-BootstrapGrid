@@ -7,11 +7,12 @@
 
 <h1>Pugs</h1>
 
-
+<!-- Start the first row -->
 <div class="row">
 
 @for (int i = 1; i <= Model.Dogs.Count(); i++){
 
+    // Output the individual card
     <div class="col-xl-3">
         <img src="~/pugs.jpg" class="img-fluid">
         <p>@Model.Dogs.ElementAt(i-1)</p>
